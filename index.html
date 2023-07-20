@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Pokedex</title>
+</head>
+
+<body onload="generatePokemon(),filterPokemon()">
+    <div class="header "><a href="index.html">
+            <h1>Pokedex</h1>
+        </a>
+        <form action="">
+            <div class="searching">
+                <input id="searchbar" required minlength="2" placeholder="Catch Pokemon..." type="text"
+                    onkeyup="filterPokemon()">
+                <img id="loading">
+                <button class="search-button"> <img src="img/pokemon-gae2f00b31_640.png" alt=""></button>
+            </div>
+        </form>
+
+    </div>
+
+    <div class="background" id="maincontent">
+
+    </div>
+
+
+    <div class="more-button">
+        <button onclick="morePokemons()"><img src="img/pokemon-gae2f00b31_640.png" alt="">
+            <span class="btn-text">Show More</span><img src="img/pokemon-gae2f00b31_640.png" alt="">
+        </button>
+    </div>
+
+
+    <div id="popUpContainer" class="popUp-container hide">
+
+    </div>
+
+
+</body>
+
+</html>
